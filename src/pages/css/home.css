@@ -1,0 +1,38 @@
+.name{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: dodgerblue;
+}
+.color{
+    color: rgb(255, 255, 255);
+}
+.nav{
+    z-index: 9;
+    z-index: 200000;
+}
+.title{
+    position:absolute;
+    top: 30%;
+    left: 20%;
+    width: 50%;
+    z-index: 100000;
+}
+
+.cv-btn{
+    position: absolute;
+    right: 30px;
+    top: 10%;
+   width: 100px;
+   height: 30px;
+   border: none;
+   border-radius: 5px;
+background-color: transparent;
+border: 1px solid white;
+z-index: 30000;
+cursor: pointer;
+color: white;
+}
+.cv-btn:hover{
+    border: 1px solid black;
+    color: black;
+}
+

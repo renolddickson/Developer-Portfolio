@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+}
+.navbar{
+    width: 95%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur(14px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    margin: 10px;
+    border-radius: 10px;
+    top: 0;
+    z-index: 30000;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+li{
+    padding: 40px 20px 40px 20px;
+}
+.navbar ul li:hover{
+   color: dodgerblue;
+   text-shadow: 1px black;
+    
+}
+.normal{
+    display: none;
+}
+.react{
+    display: none;
+}
+.nav{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+  
+@media only screen and (max-width: 600px){
+    .nav-container{
+        display: block;
+    }
+  .nav{
+      display: block;
+        position: fixed;
+        height: auto;
+        width: auto;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur(14px);
+        border-radius: 10px;
+        margin: 10px;
+        top: 20%;
+    }
+    .nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar{
+        display: none;
+    }
+    #heading-show{
+        margin-left: 1em;
+    }
+    #heading{
+        display: none;
+    }
+    .nav .normal{
+        transform: rotate(-90deg);
+        position: fixed;
+        display: flex;
+        top: 50%;
+        left: 60%;
+        background: transparent;
+        border-radius: 50%;
+    }
+    .nav .invert{
+        transform: rotate(90deg);
+        position: fixed;
+        display: flex;
+        background: transparent;
+        top: 50%;
+        left: 80%;
+    }
+    button{
+       border-style: none;
+
+    }
+    button img{
+        width: 20px;
+    }
+    li img{
+        position: relative;
+    }
+    .react{
+        display: block;
+    }
+    .fahome:hover{
+        color: white;
+        
+    }
+    .faskill:hover{
+        color: rgb(243, 247, 19);
+        background-color: black;
+    }
+    .faproject:hover{
+        color: rgb(243, 76, 76);
+    }
+    .facertificates:hover{
+        color: goldenrod;
+    }
+    .facontact:hover{
+        color: rgb(49, 221, 26);
+        transform: translateX(-2px);
+    }
+}

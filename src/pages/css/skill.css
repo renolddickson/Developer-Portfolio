@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Titillium+Web:wght@300&display=swap');
+.skill{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+overflow: hidden;
+font-family: 'Rubik', sans-serif;
+}
+.bubble{
+    height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation:  sideWay 3s ease-in-out infinite alternate;
+}
+.dot{
+    height: 10px;
+  width: 10px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 20%;
+  right: 20%;
+}
+.bubble:nth-child(1){
+  top: 10%;
+  left: 10%;
+  animation-delay: 0.5s;
+}
+.bubble:nth-child(2){
+  top: 20%;
+  left: 80%;
+  animation-delay: 0.2s;
+}
+.bubble:nth-child(3){
+    top: 23%;
+    left: 35%;
+    animation-delay: 0.8s;
+}
+.bubble:nth-child(4){
+  top: 5%;
+  left: 60%;
+}
+.bubble:nth-child(5){
+  top: 50%;
+  left: 80%;
+}
+.bubble img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+.react{
+  animation: App-logo-spin infinite 20s linear;
+}
+.bubble .js{
+  width: 70%;
+  height: auto;
+}
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes sideWay { 
+    0% { 
+        margin-top:0px;
+    }
+    100% { 
+        margin-top:50px;
+    }
+}
+
+@-moz-keyframes sideWay { 
+    0% { 
+        margin-top:0px;
+    }
+    100% { 
+        margin-top:50px;
+    }
+}
+
+@keyframes sideWay { 
+    0% { 
+        margin-top:0px;
+    }
+    100% { 
+        margin-top:50px;
+    }
+}
+/* Loaders */
+.percentage{
+  margin: auto;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  color: #ffffff;
+  min-width: 80%;
+  padding: 10px;
+  background: rgba( 255, 255, 255, 0.3 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4.5px );
+-webkit-backdrop-filter: blur( 4.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.cl,.cppl,.jsl,.rjsl,.rnl{
+  margin: 7px 10px 0 10px;
+  
+  position: absolute;
+  left: 10%;
+  height: 7px;
+  background: linear-gradient(to right, #EA4B8C,rgb(212, 28, 89));
+  border-radius: 20px;
+}
+.cl{
+  width: 60%;
+  animation-name: cl;
+  animation-duration: 3s;
+}
+.cppl{
+  animation-name: cppl;
+  animation-duration: 3s;
+  width: 30%;
+  background: linear-gradient(to right, #004481,#0c2a44);
+}
+.jsl{
+  animation-name: jsl;
+  animation-duration: 3s;
+  width: 50%;
+  background: linear-gradient(to right,rgb(211, 184, 29),rgb(219, 170, 33));
+}
+.rjsl{
+  animation-name: rjsl;
+  animation-duration: 3s;
+  width: 40%;
+  background: linear-gradient(to right,rgb(29, 211, 196),rgb(87, 220, 230));
+}
+.rnl{
+  animation-name: rnl;
+  animation-duration: 3s;
+  width: 20%;
+  background: linear-gradient(to right,rgb(62, 231, 84),rgb(61, 211, 31));
+}
+@media only screen and (max-width: 600px){
+  .cl,.cppl,.jsl,.rjsl,.rnl{
+    left: 30%;
+  }
+  .percentage{
+    left: 15%;
+  }
+}
+@keyframes cl{
+  from{
+    width: 0%;
+  }
+  to{
+    width: 60%;
+  }
+}
+@keyframes cppl{
+  from{
+    width: 0%;
+  }
+  to{
+    width: 30%;
+  }
+}
+@keyframes jsl{
+  from{
+    width: 0%;
+  }
+  to{
+    width: 50%;
+  }
+}
+@keyframes rjsl{
+  from{
+    width: 0%;
+  }
+  to{
+    width: 40%;
+  }
+}
+@keyframes rnl{
+  from{
+    width: 0%;
+  }
+  to{
+    width: 20%;
+  }
+}
+
+.bubbles {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  position: absolute;
+  border: 1px solid white;
+  bottom: -30px;
+  opacity: 0.5;
+  animation: bubble 15s ease-in-out infinite,
+    sideWays 4s ease-in-out infinite alternate;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-120vh);
+  }
+}
+
+@keyframes sideWays {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 3em;
+  }
+}
+
+.bubble--1 {
+  left: 10%;
+  animation-delay: 0.5s;
+  animation-duration: 16s;
+}
+
+.bubble--2 {
+  width: 15px;
+  height: 15px;
+  left: 40%;
+  animation-delay: 1s;
+  animation-duration: 10s;
+}
+
+.bubble--3 {
+  width: 10px;
+  height: 10px;
+  left: 30%;
+  animation-delay: 5s;
+  animation-duration: 20s;
+}
+
+.bubble--4 {
+  width: 25px;
+  height: 25px;
+  left: 40%;
+  animation-delay: 8s;
+  animation-duration: 17s;
+}
+
+.bubble--5 {
+  width: 30px;
+  height: 30px;
+  left: 60%;
+  animation-delay: 10s;
+  animation-duration: 15s;
+}
+
+.bubble--6 {
+  width: 10px;
+  height: 10px;
+  left: 80%;
+  animation-delay: 3s;
+  animation-duration: 30s;
+}
+
+.bubble--7 {
+  width: 15px;
+  height: 15px;
+  left: 90%;
+  animation-delay: -7s;
+  animation-duration: 25s;
+}
+
+.bubble--9 {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  bottom: 30px;
+  animation-delay: -5s;
+  animation-duration: 19s;
+}
+
+.bubble--10 {
+  width: 40px;
+  height: 40px;
+  left: 30%;
+  bottom: 30px;
+  animation-delay: -21s;
+  animation-duration: 16s;
+}
+
+.bubble--11 {
+  width: 30px;
+  height: 30px;
+  left: 60%;
+  bottom: 30px;
+  animation-delay: -13.75s;
+  animation-duration: 20s;
+}
+
+.bubble--11 {
+  width: 25px;
+  height: 25px;
+  left: 90%;
+  bottom: 30px;
+  animation-delay: -10.5s;
+  animation-duration: 19s;
+}
