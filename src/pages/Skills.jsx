@@ -6,7 +6,7 @@ import Reactlogo from './images/react.svg'
 import Rn from './images/react-native.png'
 import Js from './images/js.svg'
 import C from './images/c.png'
-import Cpp from './images/cpp.png'
+import flutter from './images/flutter.png'
 
 export default function Skills() {
   return (
@@ -28,13 +28,13 @@ export default function Skills() {
     <div className="dot"></div>
   </div>
   <div className="bubble">
-  <img src={Cpp} alt="C++" />
+  <img src={flutter} alt="flutter" />
     <div className="dot"></div>
   </div>
   </div>
   <div className="percentage">
     <span>C</span><span className='cl'></span><br />
-    <span>C++</span><span className='cppl'></span><br />
+    <span>Flutter</span><span className='cppl'></span><br />
     <span>JavaScript</span><span className='jsl'></span><br />
     <span>React JS</span><span className='rjsl'></span><br />
     <span>React Native</span><span className='rnl'></span><br />

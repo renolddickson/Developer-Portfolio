@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
 html, body {
     width: 100%;
     height: 100%;
@@ -7,74 +8,53 @@ html, body {
     position: relative;
     overflow: hidden;
   }
-  
-  .star {
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    position: absolute;
-    background-color: rgba(237, 205, 163, 0.8);
-    box-shadow: 0 0 40px 0 rgba(237, 205, 163, 0.8), 0 0 20px 0 #FFFFFF;
-    animation: glow 5s infinite;
+  .heading {
+    text-align: center;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 60px;
   }
-  .star--medium {
-    width: 6px;
-    height: 6px;
+  .projects-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 40px;
   }
-  .star--big {
-    width: 9px;
-    height: 9px;
-    box-shadow: 0 0 40px 0 #EDCDA3, 0 0 20px 0 #FFFFFF, inset 0 0 4px #FFFFFF;
+  .card{
+    width: 400px;
+    height: 120px;
+    background-image: linear-gradient(to top right ,rgb(231, 27, 231), rgb(28, 176, 202));
+    border-radius: 5px;
+    margin-top: 45px;
   }
-  
-  .comet {
-    width: 6px;
-    height: 6px;
-    background-color: rgba(255, 255, 255, 0.6);
-    box-shadow: 0 0 40px 0 #EDCDA3, 0 0 20px 0 #FFFFFF, inset 0 0 8px rgba(255, 255, 255, 0.6);
-    top: 0;
-    left: 80%;
-    opacity: 0.3;
-    transform: rotate(-45deg) translate(0, -50px);
-    animation: comet 6s infinite;
+  .card_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .comet:after {
-    content: "";
-    width: 20vw;
-    height: 6px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 20px rgba(237, 205, 163, 0.4);
-    position: absolute;
-    top: 0;
-    left: 0;
+  .card .app-icon img{
+    height: 60px;
+    position: relative;
+        
   }
-  
-  @keyframes glow {
-    0% {
-      opacity: 0.9;
-    }
-    50% {
-      opacity: 0.2;
-    }
-    100% {
-      opacity: 0.9;
-    }
+  .card .app-title{
+    font-size: x-large;
+    font-family: 'Josefin Sans', sans-serif;
   }
-  @keyframes comet {
-    0% {
-      transform: rotate(-45deg) translateX(0);
-      opacity: 0.3;
+  @media screen and (max-width: 600px){
+    .projects-info{
+      flex-direction: column;
     }
-    10% {
-      opacity: 1;
+    .card{
+      width: 300px;
+    height: 80px;
     }
-    20% {
-      transform: rotate(-45deg) translateX(-100vw);
-      opacity: 0;
+    .card .app-icon img{
+      top: -30px;
+      right: -30px;
     }
-    100% {
-      transform: rotate(-45deg) translateX(-100vw);
-      opacity: 0;
+    .heading{
+      padding-top: 30px;
     }
   }

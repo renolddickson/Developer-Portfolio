@@ -52,8 +52,8 @@ font-family: 'Rubik', sans-serif;
 }
 .bubble img{
     display: flex;
-    width: 100%;
-    height: 100%;
+    width: 60px;
+    height: auto;
     justify-content: center;
     align-items: center;
     object-fit: cover;
@@ -121,7 +121,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   position: absolute;
   left: 10%;
   height: 7px;
-  background: linear-gradient(to right, #EA4B8C,rgb(212, 28, 89));
+  background: linear-gradient(to right, #b90d55,rgb(212, 28, 89));
   border-radius: 20px;
 }
 .cl{
@@ -145,7 +145,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   animation-name: rjsl;
   animation-duration: 3s;
   width: 40%;
-  background: linear-gradient(to right,rgb(29, 211, 196),rgb(87, 220, 230));
+  background: linear-gradient(to right,rgb(211, 56, 29),rgb(231, 62, 19));
 }
 .rnl{
   animation-name: rnl;
