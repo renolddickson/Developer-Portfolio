@@ -9,8 +9,14 @@ import classroom from './images/004.png'
 import Assistant from './images/005.jpg'
 import todo from './images/006.png'
 import Diary from './images/007.png'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 
 export default function Projects() {
+  useEffect(()=>{
+    Aos.init({duration: 1000});
+  },[]);
   return (
     <div className='project'>
        <div className="nav-contain">
@@ -21,7 +27,7 @@ export default function Projects() {
     <div className="project_container">
  <div className="projects-info">
     <a href="https://smarthood.github.io/climate/" target="_blank" >
-   <div className="card">
+   <div data-aos="fade-left" className="card">
    <div className="card_container">
      <span className="app-title">Weather App</span>
      <spn className="description">Technology used: Reactjs, API</spn>
@@ -33,7 +39,7 @@ export default function Projects() {
     </a>
    {/* Card ends here  */}
    <a href="https://smarthood.github.io/smartsearch/" target="_blank" >
-   <div className="card">
+   <div data-aos="fade-right" className="card">
    <div className="card_container">
      <span className="app-title">Smart searcher</span>
      <spn className="description">Technology used: Reactjs</spn>
@@ -45,7 +51,7 @@ export default function Projects() {
     </a>
    {/* Card ends here  */}
    <a href="https://github.com/smarthood/smteccore" target="_blank" >
-   <div className="card">
+   <div data-aos="fade-left" className="card">
    <div className="card_container">
      <span className="app-title"> Student Mark</span>
      <spn className="description">Technology used: Reactjs, SheetAPI</spn>
@@ -57,7 +63,7 @@ export default function Projects() {
     </a>
    {/* Card ends here  */}
    <a href="https://github.com/smarthood/cseclassroom" target="_blank" >
-   <div className="card">
+   <div data-aos="fade-right" className="card">
    <div className="card_container">
      <span className="app-title">Classroom Clone</span>
      <spn className="description">Technology used: MERN</spn>
@@ -69,7 +75,7 @@ export default function Projects() {
     </a>
    {/* Card ends here  */}
    <a href="https://github.com/smarthood/spidy_voice_assistant" target="_blank" >
-   <div className="card">
+   <div data-aos="fade-left" className="card">
    <div className="card_container">
      <span className="app-title">Virtual Assistant</span>
      <spn className="description">Technology used: Reactjs</spn>
@@ -81,7 +87,7 @@ export default function Projects() {
     </a>
    {/* Card ends here  */}
    <a href="https://expo.dev/accounts/smartdickson/projects/kanaku/builds/8eeb8f74-e213-4b67-a389-657c529e976a" target="_blank" >
-   <div className="card">
+   <div data-aos="fade-right" className="card">
    <div className="card_container">
      <span className="app-title">Dept List</span>
      <spn className="description">Technology used: React Native</spn>
@@ -93,7 +99,7 @@ export default function Projects() {
     </a>
    {/* Card ends here  */}
    <a href="https://github.com/smarthood/Diary2.0" target="_blank" >
-   <div className="card">
+   <div data-aos="fade-left" className="card">
    <div className="card_container">
      <span className="app-title">Diary 2.0</span>
      <spn className="description">Technology used: Reactjs, Firebase</spn>
