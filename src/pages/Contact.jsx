@@ -13,13 +13,14 @@ export default function Contact() {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs.sendForm('service_e5olosv', 'template_v6ha9lp', form.current, 'uqRrk0ZjoRwRG1fM0')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
+      alert("Message sent successfully!");
+      document.getElementById("myForm").reset();
   };
     return (
       <div className="contact">
@@ -30,7 +31,7 @@ export default function Contact() {
   <Navbar />
   </div>
   <div className="form_container">
-  <form ref={form} onSubmit={sendEmail}>
+  <form ref={form} id="myForm" onSubmit={sendEmail}>
   <h2>Contact Me</h2>
     <label>Name</label>
 <input type="name" name="name" placeholder='Your name'/>

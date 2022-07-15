@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&family=Titillium+Web:wght@300&display=swap');
 .skill{
+ height: 100%; 
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 overflow: hidden;
 font-family: 'Rubik', sans-serif;
+
 }
 .bubble{
     height: 100px;
   width: 100px;
   border-radius: 50px;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.267);
   border: 2px solid rgba(255, 255, 255, 0.7);
   position: absolute;
   display: flex;

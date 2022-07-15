@@ -39,19 +39,19 @@ export default function Skills() {
     <span>React JS</span><span className='rjsl'></span><br />
     <span>React Native</span><span className='rnl'></span><br />
   </div>
-  <div class="ocean">
-  <div class="bubbles bubble--2"></div>
-  <div class="bubbles bubble--1"></div>
-  <div class="bubbles bubble--3"></div>
-  <div class="bubbles bubble--4"></div>
-  <div class="bubbles bubble--5"></div>
-  <div class="bubbles bubble--6"></div>
-  <div class="bubbles bubble--7"></div>
-  <div class="bubbles bubble--8"></div>
-  <div class="bubbles bubble--9"></div>
-  <div class="bubbles bubble--10"></div>
-  <div class="bubbles bubble--11"></div>
-  <div class="bubbles bubble--12"></div>
+  <div className="ocean">
+  <div className="bubbles bubble--2"></div>
+  <div className="bubbles bubble--1"></div>
+  <div className="bubbles bubble--3"></div>
+  <div className="bubbles bubble--4"></div>
+  <div className="bubbles bubble--5"></div>
+  <div className="bubbles bubble--6"></div>
+  <div className="bubbles bubble--7"></div>
+  <div className="bubbles bubble--8"></div>
+  <div className="bubbles bubble--9"></div>
+  <div className="bubbles bubble--10"></div>
+  <div className="bubbles bubble--11"></div>
+  <div className="bubbles bubble--12"></div>
 </div>
     </div>
   )
