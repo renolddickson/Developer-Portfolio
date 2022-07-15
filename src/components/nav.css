@@ -50,6 +50,11 @@ a{
     text-decoration: none;
     color: black;
 }
+.active{
+    color: dodgerblue;
+    background-color: transparent;
+    
+}
   
 @media only screen and (max-width: 600px){
     .nav-container{
@@ -111,22 +116,8 @@ a{
     .react{
         display: block;
     }
-    .fahome:hover{
-        color: white;
-        
-    }
-    .faskill:hover{
-        color: rgb(243, 247, 19);
-        background-color: black;
-    }
-    .faproject:hover{
-        color: rgb(243, 76, 76);
-    }
-    .facertificates:hover{
-        color: goldenrod;
-    }
-    .facontact:hover{
-        color: rgb(49, 221, 26);
-        transform: translateX(-2px);
+    .active{
+        color: black;
+        background-color: rgba(240, 248, 255, 0.226);
     }
 }

@@ -20,7 +20,7 @@ export default function Projects() {
     <h2>My Works</h2></div>
     <div className="project_container">
  <div className="projects-info">
-    <a href="https://smarthood.github.io/smartsearch/" target="_blank" >
+    <a href="https://smarthood.github.io/climate/" target="_blank" >
    <div className="card">
    <div className="card_container">
      <span className="app-title">Weather App</span>
@@ -44,7 +44,7 @@ export default function Projects() {
    </div>
     </a>
    {/* Card ends here  */}
-   <a href="https://smarthood.github.io/smartsearch/" target="_blank" >
+   <a href="https://github.com/smarthood/smteccore" target="_blank" >
    <div className="card">
    <div className="card_container">
      <span className="app-title"> Student Mark</span>
@@ -56,7 +56,7 @@ export default function Projects() {
    </div>
     </a>
    {/* Card ends here  */}
-   <a href="https://smarthood.github.io/smartsearch/" target="_blank" >
+   <a href="https://github.com/smarthood/cseclassroom" target="_blank" >
    <div className="card">
    <div className="card_container">
      <span className="app-title">Classroom Clone</span>
@@ -68,7 +68,7 @@ export default function Projects() {
    </div>
     </a>
    {/* Card ends here  */}
-   <a href="https://smarthood.github.io/smartsearch/" target="_blank" >
+   <a href="https://github.com/smarthood/spidy_voice_assistant" target="_blank" >
    <div className="card">
    <div className="card_container">
      <span className="app-title">Virtual Assistant</span>
@@ -80,7 +80,7 @@ export default function Projects() {
    </div>
     </a>
    {/* Card ends here  */}
-   <a href="https://smarthood.github.io/smartsearch/" target="_blank" >
+   <a href="https://expo.dev/accounts/smartdickson/projects/kanaku/builds/8eeb8f74-e213-4b67-a389-657c529e976a" target="_blank" >
    <div className="card">
    <div className="card_container">
      <span className="app-title">Dept List</span>
@@ -92,7 +92,7 @@ export default function Projects() {
    </div>
     </a>
    {/* Card ends here  */}
-   <a href="https://smarthood.github.io/smartsearch/" target="_blank" >
+   <a href="https://github.com/smarthood/Diary2.0" target="_blank" >
    <div className="card">
    <div className="card_container">
      <span className="app-title">Diary 2.0</span>
