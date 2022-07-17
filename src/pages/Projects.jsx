@@ -18,7 +18,7 @@ export default function Projects() {
     Aos.init({duration: 1000});
   },[]);
   return (
-    <div className='project'>
+    <div className='project' >
        <div className="nav-contain">
   <Navbar />
   </div>

@@ -3,6 +3,9 @@
     overflow: hidden;
     background-color: black;
   }
+  .sky{
+    min-height: 100vh;
+  }
   
   #sun {
       position: absolute;
